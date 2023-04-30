@@ -8,7 +8,7 @@ public class Rectangle {
      */
     public static int[] getCoordinate(int[][] values) {
 
-        // ^ - XOR: 두 수가 같으면 0, 두 수가 다르면 1
+        // ^ - XOR: 두 수가 같으면 0, 두 수가 다르면 1 (좌표 대칭값)
         int[] answer = new int[2];
         answer[0] = values[0][0] ^ values[1][0] ^ values[2][0];
         answer[1] = values[0][1] ^ values[1][1] ^ values[2][1];
